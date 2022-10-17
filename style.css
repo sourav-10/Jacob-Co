@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 400px;
+    background: black;
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.product:hover .specification {
+    bottom: 0px;
+}
+
+.product .imgbox {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.product .imgbox img{
+    display: block;
+    width: 80%;
+    margin: 10px auto 0;
+}
+
+.specification {
+    position: absolute;
+    width: 100%;
+    bottom: -132px;
+    background: #bbb;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .5s;
+
+}
+
+.specification h2 {
+    margin: 0;
+    padding: 0;
+    font-style: 20px;
+    width: 100px;
+}
+
+.specification h2 span{
+    font-size: 15px;
+    color: black;
+    font-weight:normal;
+
+}
+
+.specification .price{
+    position: absolute;
+    top:12px;
+    right: 25px;
+    font-weight: bold;
+    color: #000;
+    font-size: 30px;
+}
+
+label{
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+ul li {
+    list-style: none;
+    margin: 5px 5px 0px;    
+    font-weight: normal;
+    color:black;
+
+
+}
+ul li:first-child{
+    margin-left:0 ;
+}
+
+ul.colors li{
+    width:15px;
+    height: 15px;
+
+}
+
+ul.colors li:nth-child(1)
+{
+    background: #f00;
+
+}
+
+ul.colors li:nth-child(2)
+{
+    background: white;
+}
+
+
+
+a{
+    display: block;
+    padding: 5px;
+    color: #fff;
+    margin: 10px 0 0;
+    border-radius: 5px;
+    background: black;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.02s;
+    cursor: pointer;
+
+
+}
+
+a:hover{
+    background: #5acef4;
+}
